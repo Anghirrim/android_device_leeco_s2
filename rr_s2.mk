@@ -22,6 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/leeco/s2/device.mk)
 
 # Inherit some common ResurrectionRemix stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+Set TARGET_FACE_UNLOCK_SUPPORTED := true
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
